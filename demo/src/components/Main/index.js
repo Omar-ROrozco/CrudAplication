@@ -89,14 +89,15 @@ export default function Main() {
   return (
     <>
       {/* TÍTULO */}
-      <h2 className="text-center text-3xl text-gray-900 py-8 sm:text-4xl">Caja de Comentarios</h2>
+      <h2 className="text-center text-3xl text-gray-900 py-8 sm:text-4xl">Listado de tareas</h2>
+
       {/* FORMULARIO */}
-      <div className={edition ? "max-w-5xl mx-auto px-6 pb-6 sm:px-12 bg-yellow-100 rounded-md" : "max-w-5xl mx-auto px-6 sm:px-12" }>
+      <div className={edition ? "max-w-5xl mx-auto px-6 pb-6 sm:px-12 bg-yellow-100" : "max-w-5xl mx-auto px-6 sm:px-12" }>
         <form onSubmit={edition ? editComment : addComment}>
-          <h3 className="text-lg leading-6 font-medium text-gray-900 py-3">Asunto</h3>
+          <h3 className="text-lg leading-6 font-medium text-gray-900 py-3">Tarea</h3>
           <input
             name="title"
-            className="border shadow-sm mt-2 rounded-md border-gray-200 block w-full focus:ring-blue-700 focus:border-blue sm:text-sm"
+            className="border h-10 shadow-sm mt-2 border-gray-200 block w-full sm:text-sm"
             onChange={(e) => handleChange(e)}
             value={newComment.title}
           />
@@ -105,17 +106,17 @@ export default function Main() {
             name="description"
             rows="3"
             onChange={(e) => handleChange(e)}
-            className="max-w-full mt-2 border shadow-sm rounded-md border-gray-200 block w-full focus:ring-blue-700 focus:border-blue sm:text-sm"
+            className="max-w-full mt-2 border shadow-sm border-gray-200 block w-full sm:text-sm"
             value={newComment.description}
           />
           {edition ? 
-            ( <button className="inline-flex items-center max-h-12 px-3 my-4 py-2 border border-transparent text-sm rounded-md leading-4 font-medium shadow-sm text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">Editar</button> ) 
+            ( <button className="inline-flex items-center max-h-12 px-3 my-4 py-2 border border-transparent text-sm leading-4 font-medium shadow-sm text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">Editar</button> ) 
           : 
-            ( <button className="inline-flex items-center max-h-12 px-3 my-4 py-2 border border-transparent text-sm rounded-md leading-4 font-medium shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700">Agregar</button> ) }  
+            ( <button className="inline-flex items-center max-h-12 px-3 my-4 py-2 border border-transparent text-sm leading-4 font-medium shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700">Agregar tarea</button> ) }  
         </form>
 
         {error ? (
-          <div className="rounded-md bg-yellow-50 p-4 my-4">
+          <div className="bg-yellow-50 p-4 my-4">
           <div className="flex">
             <div className="flex-shrink-0">
               <svg
@@ -142,7 +143,7 @@ export default function Main() {
       {/* LISTADO DE COMENTARIOS */}
       <div className="max-w-5xl mx-auto px-6 sm:px-12">
       {comments.length === 0 ? (
-          <div className="rounded-md bg-blue-50 p-4 my-4">
+          <div className="bg-blue-50 p-4 my-4">
             <div className="flex">
               <div className="flex-shrink-0">
               <svg className="h-5 w-5 text-blue-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -169,12 +170,12 @@ export default function Main() {
               <div className="mt-3 flex sm:mt-0 sm:ml-4">
                 <button 
                   onClick={() => deleteComment(element.id)}
-                  className="inline-flex max-h-12 items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700"
+                  className="inline-flex max-h-12 items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700"
                 >
                   Eliminar
                 </button>
                 <button 
-                  className="ml-3 max-h-12 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700"
+                  className="ml-3 max-h-12 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700"
                   onClick={() => edit(element)}>
                   Editar
                 </button>

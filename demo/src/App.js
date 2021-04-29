@@ -1,12 +1,28 @@
 import Main from './components/Main'
-import Header from './components/Header'
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main/>
+      <header class="relative">
+        <div class="bg-gray-900 pt-6">
+          <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
+            <div class="flex items-center flex-1">
+              <div class="flex items-center justify-between w-full md:w-auto">
+                <a href="#">
+                  <img class="h-8 w-auto h-10 mb-5 sm:h-10" src="./ucamp.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="md:flex md:items-center md:space-x-6">
+              <a href="https://github.com" class="text-base font-medium text-white hover:text-gray-300">
+                Tu perfil
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <Main />
     </div>
   );
 }
