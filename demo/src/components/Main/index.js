@@ -170,12 +170,12 @@ export default function Main() {
               <div className="mt-3 flex sm:mt-0 sm:ml-4">
                 <button 
                   onClick={() => deleteComment(element.id)}
-                  className="inline-flex max-h-12 items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700"
+                  className="inline-flex max-h-12 items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
                 >
                   Eliminar
                 </button>
                 <button 
-                  className="ml-3 max-h-12 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700"
+                  className="ml-3 max-h-12 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700"
                   onClick={() => edit(element)}>
                   Editar
                 </button>
