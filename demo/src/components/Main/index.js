@@ -151,7 +151,7 @@ export default function Main() {
               </svg>
               </div>
               <div className="ml-3">
-                <h3 className="whitespace-nowrap text-sm font-medium text-blue-800">Aún no has creado comentarios.</h3>
+                <h3 className="whitespace-nowrap text-sm font-medium text-blue-800">Aún no has creado tareas.</h3>
               </div>
             </div>
           </div>
