@@ -112,7 +112,7 @@ export default function Main() {
           {edition ? 
             ( <button className="inline-flex items-center max-h-12 px-3 my-4 py-2 border border-transparent text-sm leading-4 font-medium shadow-sm text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">Editar</button> ) 
           : 
-            ( <button className="inline-flex items-center max-h-12 px-3 my-4 py-2 border border-transparent text-sm leading-4 font-medium shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700">Agregar tarea</button> ) }  
+            ( <button className="inline-flex items-center max-h-12 px-3 my-4 py-2 border border-transparent text-sm leading-4 font-medium shadow-sm text-white bg-teal hover:bg-teal focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700">Agregar tarea</button> ) }  
         </form>
 
         {error ? (
@@ -143,7 +143,7 @@ export default function Main() {
       {/* LISTADO DE COMENTARIOS */}
       <div className="max-w-5xl mx-auto px-6 sm:px-12">
       {comments.length === 0 ? (
-          <div className="bg-blue-50 p-4 my-4">
+          <div className="bg-grayButton p-4 my-4">
             <div className="flex">
               <div className="flex-shrink-0">
               <svg className="h-5 w-5 text-blue-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -151,7 +151,7 @@ export default function Main() {
               </svg>
               </div>
               <div className="ml-3">
-                <h3 className="whitespace-nowrap text-sm font-medium text-blue-800">Aún no has creado tareas.</h3>
+                <h3 className="whitespace-nowrap text-sm font-medium text-black">Aún no has creado tareas.</h3>
               </div>
             </div>
           </div>
@@ -175,7 +175,7 @@ export default function Main() {
                   Eliminar
                 </button>
                 <button 
-                  className="ml-3 max-h-12 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700"
+                  className="ml-3 max-h-12 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium text-white bg-teal hover:bg-teal"
                   onClick={() => edit(element)}>
                   Editar
                 </button>

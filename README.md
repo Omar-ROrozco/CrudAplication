@@ -16,65 +16,84 @@
 
 ## 1. Intro
 
-Los sitios web estáticos han crecido en popularidad estos últimos años. 
+Conforme vas aprendiendo, te encontrarás con funciones comunes en el mundo de programación. Entre ellas están los procesos CRUD, operaciones que trabajan con datos para persistirlos en una base de datos. 
 
-Existen muchas aplicaciones como [Wix](https://wix.com) o [Squarespace](https://squarespace.com) que han aprovechado este crecimiento debido a la gran necesidad de empresas introduciéndose a Internet para presentar sus productos al mundo.
+Es posible utilizarlos dentro de la interfaz de usuario para facilitar vista, búsqueda y modificación de información.
 
-Sin embargo, hay un segmento que necesita mucha personalización, ya sea porque más adelante incluirá un sistema de registro, un área para clientes, etc. 
+Se suelen referir al acrónimo:
 
-Es aquí donde es recomendable construirlo sin usar terceros. 
+- C - _Create_ ("Crear")
+- R - _Read_ ("Leer")
+- U - _Update_ ("Actualizar")
+- D - _Delete_ ("Borrar")
 
-Comenzamos a trabajar con tu primer proyecto, una página web estática.
+Un ejemplo muy común relacionadas con operaciones CRUD son las tablas de datos.
+
+![](./imagenes/example1.png)
+_CRUD con Tailwind UI_
+
+- Se realiza la lectura de los datos alojados y se generan filas donde se incluye el nombre de la persona, su título, su status y su rol.
+
+- Cuenta con un botón "Edit" al final de cada fila que me permite editar el dato.
+
+- Dependiendo de la seguridad, se permite un botón de borrado o agregados nuevos de datos.
+
+Algunos ejemplos donde se aplican las operaciones CRUD son:
+
+- Listado de tareas
+- Tablas para gestionar datos
+- Sección de comentarios en un blog
+- Catálogo de productos
+
+Con estos conceptos hablados, avancemos a desarrollar nuestro segundo proyecto del _bootcamp_.
 
 ****
 
 ## 2. Demo
 
-Puedes entrar a ver el demo en este vínculo: https://ucamp.team/
+Puedes entrar a ver el demo aquí: https://p2.ucamp.team/
 
-La idea es inspirarte con esta demostración de proyecto. 
+![imagen](./imagenes/example2.png)
+_CRUD UCAMP_
 
-**No construirás el mismo**, sin embargo, puedes examinar cómo fue construido para establecer tu estrategia.
+Observa que se desarrolló una aplicación con operaciones CRUD, puntualmente un listado de tareas. 
 
-![imagen]("./../demo/demo.png)
+Dentro puedes:
 
+- Crear tareas con **AGREGAR TAREA** y los campos de texto especificando la tarea y la descripción.
+- Leer las tareas, ubicadas en la parte inferior de la aplicación.
+- Actualizar las tareas, con el botón **EDITAR**
+- Borrar la tarea, con el botón de **ELIMINAR**
+
+La idea es crear una aplicación similar que cumpla con las 4 operaciones CRUD (crear, leer, actualizar, borrar).
+
+No necesariamente igual o un listado de tareas, pero que sí cumpla con las 4 operaciones CRUD sobre los datos que utilices y se mantenga un nivel mínimo de persistencia.
 
 ****
 
 ## 3. ¿Qué construirás?
 
-Este proyecto está enfocado en construir una página "landing" para un negocio.
+En este proyecto construirás una aplicación que involucre las 4 operaciones CRUD.
 
-Se te pide que sea una sola página que permita establecer:
+A continuación, determinamos las características del proyecto:
 
-- Mensajes del negocio (¿qué se vende?)
-- Breve catálogo de productos
-- Vista adaptable a móviles
-- Las secciones siguientes:
-  - **a. Header**
-    Sección que involucra el logo y las áreas principales del sitio.
-  - **b. Jumbotron**
-    Sección de presentación del producto al usuario. Debe de incluir su título, descripción y un elemento para introducir tu correo.
-  - **c. Blog o catálogo**
-    Sección para mostrar los artículos del sitio web. O en su caso, artículos de catálogo de productos
-  - **d. Adicionales**
-    Secciones diversas que puedes agregar para dar mayor valor a tu sitio.
-  - **e. Footer**
-    Sección que incluye todas las áreas del sitio, incluyendo redes sociales.
+- Una aplicación usando solo una página. Puedes utilizar el concepto de _Single Page Application_.
+- Una sección en tu aplicación para **crear** elementos (productos, tareas, usuarios, etc.)
+- Una sección para **borrar** elementos
+- Una sección para **modificar** elementos
+- Una sección para ver todos los elementos creados
 
-![imagen]("./../demo/layout.png)
+> Puedes desarrollar una interfaz como esta para cumplir con las 4 operaciones:
+
+![](./imagenes/example3.png)
+
 
 ****
 
 ## 4. Objetivos de aprendizaje
 
-El objetivo principal de este proyecto es desarrollar una interfaz utilizando HTML y CSS, en toda su aplicación.
-
-Aplicarás:
-
-- Prototipado simple (baja findelidad) que mostrará tu plan de desarrollo. Puedes utilizar un dibujo a lápiz, que muestre la página que vas a construir.
-- Etiquetas estándar HTML5.
-- CSS, incluyendo técnicas Flexbox, CSS Grids y Responsive Web Design.
+- Aplicar las operaciones CRUD en un segmento de datos.
+- Estructurar bajo un paradigma de programación (POO o PF).
 
 ****
 
@@ -88,15 +107,18 @@ Usa esta lista para saber los requisitos mínimos del proyecto:
 
 ### UI
 - [ ] Desarrollar prototipado simple.
-- [ ] Aplicar en todo el sitio HTML semántico de estándar no.5 (HTML5).
-- [ ] Aplicar tipos de selectores en CSS.
+- [ ] Aplicar estándar HTML5.
+- [ ] Aplicar selectores en CSS.
 - [ ] Sección `Header`
-- [ ] Sección `Jumbotron`
-- [ ] Sección de registro de usuario
-- [ ] Sección artículos o catálogo
-- [ ] Sección `footer`
-- [ ] Responsive Web Design (Vista en móviles con uso de media queries)
+- [ ] Formulario para crear un elemento
+- [ ] Sección para leer todos los elementos
+- [ ] Sección para modificar la información de uno de los elementos
+- [ ] Sección para borrar un elemento seleccionado por el usuario
 
+### JAVASCRIPT
+- [ ] Utilizar la estructura de objetos DOM
+- [ ] Persistir los datos
+- [ ] Opcional. Guardar en `window.localStorage`
 
 ### CONTROL DE VERSIONES
 - [ ] Crear un repositorio en GitHub
@@ -114,9 +136,10 @@ A partir de los requisitos, tu % estará definido de esta forma:
 
 | ÁREA       | % DEL TOTAL |
 | ------------- |:-------------:|
-| UI      | 70%     |
+| UI      | 30%     |
+| UI      | 30%     |
 | CONTROL DE VERSIONES      | 20%     |
-| DEPLOY | 10%      |
+| DESPLIEGUE | 10%      |
 
 ****
 
