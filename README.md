@@ -135,7 +135,7 @@ A partir de los requisitos, tu % estará definido de esta forma:
 | ÁREA       | % DEL TOTAL |
 | ------------- |:-------------:|
 | UI      | 30%     |
-| UI      | 30%     |
+| JAVASCRIPT      | 40%     |
 | CONTROL DE VERSIONES      | 20%     |
 | DESPLIEGUE | 10%      |
 
