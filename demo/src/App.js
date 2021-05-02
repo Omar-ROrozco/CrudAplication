@@ -8,7 +8,7 @@ function App() {
           <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
             <div class="flex items-center flex-1">
               <div class="flex items-center justify-between w-full md:w-auto">
-                <a href="#">
+                <a href="https://u-camp.utel.edu.mx/">
                   <img class="h-8 w-auto h-10 mb-5 sm:h-10" src="./ucamp.png" alt="" />
                 </a>
               </div>
