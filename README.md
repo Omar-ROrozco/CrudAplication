@@ -30,7 +30,6 @@ Se suelen referir al acrónimo:
 Un ejemplo muy común relacionadas con operaciones CRUD son las tablas de datos.
 
 ![](./imagenes/example1.png)
-_CRUD con Tailwind UI_
 
 - Se realiza la lectura de los datos alojados y se generan filas donde se incluye el nombre de la persona, su título, su status y su rol.
 
@@ -54,7 +53,6 @@ Con estos conceptos hablados, avancemos a desarrollar nuestro segundo proyecto d
 Puedes entrar a ver el demo aquí: https://p2.ucamp.team/
 
 ![imagen](./imagenes/example2.png)
-_CRUD UCAMP_
 
 Observa que se desarrolló una aplicación con operaciones CRUD, puntualmente un listado de tareas. 
 
