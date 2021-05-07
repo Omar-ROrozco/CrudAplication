@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { nanoid } from "nanoid";
+import About from './About'
 
 export default function Main() {
   // 1. HOOKS
@@ -88,8 +89,7 @@ export default function Main() {
 
   return (
     <>
-      {/* TÍTULO */}
-      <h2 className="text-center text-3xl text-gray-900 py-8 sm:text-4xl">Listado de tareas</h2>
+      <About />
 
       {/* FORMULARIO */}
       <div className={edition ? "max-w-5xl mx-auto px-6 pb-6 sm:px-12 bg-yellow-100" : "max-w-5xl mx-auto px-6 sm:px-12" }>
