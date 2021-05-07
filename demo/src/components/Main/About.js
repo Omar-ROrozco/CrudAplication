@@ -1,5 +1,3 @@
-import { ChevronDownIcon } from '@heroicons/react/solid'
-
 export default function Example() {
   return (
     <div className="bg-white">
