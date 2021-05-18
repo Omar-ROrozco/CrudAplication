@@ -136,8 +136,8 @@ A partir de los requisitos, tu % estará definido de esta forma:
 | ------------- |:-------------:|
 | UI      | 30%     |
 | JAVASCRIPT      | 40%     |
-| CONTROL DE VERSIONES      | 20%     |
-| DESPLIEGUE | 10%      |
+| CONTROL DE VERSIONES      | 10%     |
+| DESPLIEGUE | 20%      |
 
 ****
 
