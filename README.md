@@ -101,30 +101,29 @@ Usa esta lista para saber los requisitos mínimos del proyecto:
 
 ### GENERAL
 
-- [ ] Realizarse de manera individual
+Realizarse de manera individual
 
 ### UI
-- [ ] Desarrollar prototipado simple.
-- [ ] Aplicar estándar HTML5.
-- [ ] Aplicar selectores en CSS.
-- [ ] Sección `Header`
-- [ ] Formulario para crear un elemento
-- [ ] Sección para leer todos los elementos
-- [ ] Sección para modificar la información de uno de los elementos
-- [ ] Sección para borrar un elemento seleccionado por el usuario
+- [ ] Desarrollar prototipado simple, aplicando estándar HTML5 y selectores en CSS.
+- [ ] Sección `Header`.
+- [ ] Formulario para crear un elemento.
+- [ ] Sección para leer todos los elementos.
+- [ ] Sección para modificar la información de uno de los elementos.
+- [ ] Sección para borrar un elemento seleccionado por el usuario.
 
 ### JAVASCRIPT
-- [ ] Utilizar la estructura de objetos DOM
-- [ ] Persistir los datos
-- [ ] Opcional. Guardar en `window.localStorage`
+- [ ] Utilizar la estructura de objetos DOM.
+- [ ] Persistir los datos y almacenarlos en `window.localStorage`.
 
 ### CONTROL DE VERSIONES
-- [ ] Crear un repositorio en GitHub
-- [ ] Realizar "commits" en tu repositorio, mínimo 5
+- [ ] Crear un repositorio en GitHub y realizar mínimo 5 "commits" en tu repositorio.
 
 ### DESPLIEGUE
-- [ ] Crear una URL para compartir (puedes utilizar Netlify o GitHub Pages)
-- [ ] Colocar descripción dentro del repositorio
+- [ ] Crear una URL para compartir (puedes utilizar Netlify o GitHub Pages).
+- [ ] Colocar descripción dentro del repositorio.
+
+### ENTREGA A TIEMPO
+- [ ] Entregar tu proyecto en el tiempo estipulado.
 
 ****
 
@@ -136,8 +135,9 @@ A partir de los requisitos, tu % estará definido de esta forma:
 | ------------- |:-------------:|
 | UI      | 30%     |
 | JAVASCRIPT      | 40%     |
-| CONTROL DE VERSIONES      | 10%     |
-| DESPLIEGUE | 20%      |
+| CONTROL DE VERSIONES      | 5%     |
+| DESPLIEGUE | 10%      |
+| ENTREGA A TIEMPO | 15%      |
 
 ****
 
